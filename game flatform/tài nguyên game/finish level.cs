@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +9,7 @@ public class finishlevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        finishsound = GetComponent<AudioSource>();
+      finishlevel =GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

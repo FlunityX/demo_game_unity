@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] private LayerMask jumpable;
@@ -14,7 +13,7 @@ public class NewBehaviourScript : MonoBehaviour
     public SpriteRenderer sprite;
     [SerializeField] public AudioSource jumpeffect;
 
-    AnimatorStateInfo stateInfo;
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +27,6 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Input.GetAxis("Horizontal"): Đây là một hàm trong Unity để lấy giá trị 
-        // đầu vào từ trục ngang (trái/phải) của bàn phím hoặc thiết bị nhập liệu.
-        // Khi nhấn phím mũi tên trái, giá trị sẽ là -1; khi nhấn phím mũi tên phải, 
-        // giá trị sẽ là 1; và khi không nhấn phím nào, giá trị sẽ là 0. Điều này cho 
-        // phép điều khiển di chuyển sang trái hoặc sang phải.
         dirX = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(dirX * 7f, rb.velocity.y);
 
